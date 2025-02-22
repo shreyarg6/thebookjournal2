@@ -26,11 +26,12 @@ export default function App() {
   );
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="items">
       <ThemeToggle />
       <SearchBar setSearchTerm={setSearchTerm} />
       <BookList books={filteredBooks} addFavorite={addFavorite} />
       <FavoriteBooks favorites={favorites} />
     </div>
   );
-}
+};
+// I complete this portion of my site with the help of online resources and AI.

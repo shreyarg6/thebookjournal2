@@ -1,6 +1,6 @@
 export default function SearchBar({ setSearchTerm }) {
     return (
-      <div className="mb-4">
+      <div className="search">
         <input
           type="text"
           placeholder="Search books..."

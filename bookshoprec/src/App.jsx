@@ -3,6 +3,7 @@ import BookList from "./components/BookList";
 import SearchBar from "./components/SearchBar";
 import FavoriteBooks from "./components/FavoriteBooks";
 import ThemeToggle from "./components/ThemeToggle";
+import "./styles.css";
 
 const booksData = [
   { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
@@ -26,7 +27,7 @@ export default function App() {
   );
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="items">
       <ThemeToggle />
       <SearchBar setSearchTerm={setSearchTerm} />
       <BookList books={filteredBooks} addFavorite={addFavorite} />
