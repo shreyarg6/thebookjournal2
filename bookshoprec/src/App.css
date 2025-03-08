@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed; /* Fixes navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: pink; /* Keeps the pink theme */
   text-align: center;
+  padding: 15px 0;
+  z-index: 1000; /* Ensures navbar stays above all content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.pink-theme {
+  background-color: #ff69b4;
+  padding: 15px;
 }
 
-.card {
-  padding: 2em;
+.book-card {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
-.read-the-docs {
-  color: #888;
+.search-bar {
+  padding: 8px;
+  margin: 10px 0;
 }

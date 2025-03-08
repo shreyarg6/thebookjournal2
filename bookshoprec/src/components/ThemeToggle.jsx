@@ -1,16 +1,14 @@
-import { useState } from "react";
+import React from "react";
+import { useAppContext } from "../App";
 
-export default function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark");
-  };
+const ThemeToggle = () => {
+  const { theme, toggleTheme } = useAppContext();
 
   return (
-    <button onClick={toggleTheme}>
-      {darkMode ? "Light Mode" : "Dark Mode"}
+    <button onClick={toggleTheme} className={`theme-toggle ${theme}`}>
+      Toggle Theme
     </button>
   );
-}
+};
+
+export default ThemeToggle;
