@@ -7,26 +7,39 @@ body {
 }
 
 .navbar {
-  position: fixed; /* Fixes navbar at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: pink; /* Keeps the pink theme */
+  background-color: pink;
   text-align: center;
   padding: 15px 0;
-  z-index: 1000; /* Ensures navbar stays above all content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+  z-index: 1000;
 }
 
-nav ul {
+.navbar ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav ul li a {
-  color: white;
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: black;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 .pink-theme {

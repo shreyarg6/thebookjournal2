@@ -10,6 +10,7 @@ import SearchBar from "./components/SearchBar";
 import ThemeToggle from "./components/ThemeToggle";
 import "./App.css";
 import "./styles.css";
+import Navbar from "./components/Navbar";
 
 // Context API for state management
 const AppContext = createContext();
