@@ -5,10 +5,10 @@ import BookCard from "./BookCard";
 const BookList = () => {
   const { favorites, setFavorites } = useAppContext();
   const [searchQuery, setSearchQuery] = useState("");
-
+  
   // Manually defined book list
   const books = [
-    { id: 1, title: "To Kill a Mockingbird", author: "Harper Lee" },
+    { id: 1, title: "To Kill a Mockingbird", author: "Harper Lee", summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
     { id: 2, title: "1984", author: "George Orwell" },
     { id: 3, title: "Pride and Prejudice", author: "Jane Austen" },
     { id: 4, title: "The Great Gatsby", author: "F. Scott Fitzgerald" },

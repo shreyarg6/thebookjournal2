@@ -3,11 +3,12 @@ import { useAppContext } from "../App";
 import BookCard from "./BookCard";
 
 const FavoriteBooks = () => {
+  <h1>My Favorite Books</h1>
   const { favorites } = useAppContext();
 
   return (
     <div className="favorite-books">
-      <h2>Favorite Books</h2>
+      {/* <h2>Favorite Books</h2> */}
       {favorites.length > 0 ? (
         favorites.map((book) => <BookCard key={book.id} book={book} />)
       ) : (

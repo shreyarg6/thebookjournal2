@@ -4,13 +4,12 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import BookList from "./components/BookList";
-import FavoriteBooks from "./components/FavoriteBooks";
+// import BookList from "./pages/Books";
+import FavoriteBooks from "./pages/Favorites";
 import SearchBar from "./components/SearchBar";
 import ThemeToggle from "./components/ThemeToggle";
 import "./App.css";
 import "./styles.css";
-import Navbar from "./components/Navbar";
 
 // Context API for state management
 const AppContext = createContext();
@@ -44,7 +43,7 @@ const App = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/books" element={<><SearchBar /><BookList /></>} />
