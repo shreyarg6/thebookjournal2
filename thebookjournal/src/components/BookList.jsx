@@ -82,14 +82,15 @@ return (
       placeholder="Search books"
       value={searchQuery}
       onChange={handleSearch}
+      style={{ marginRight: "auto" , padding: "10px",  margin: "10px 0" }}
     />
 
-    <select value={searchBy} onChange={handleSearchByChange}>
+    <select value={searchBy} onChange={handleSearchByChange} style={{ marginRight: "auto" , padding: "10px",  margin: "10px 0", }}>
       <option value="title">Search by Title</option>
       <option value="author">Search by Author</option>
     </select>
 
-    <select value={selectedGenre} onChange={handleGenreChange}>
+    <select value={selectedGenre} onChange={handleGenreChange} style={{ marginRight: "auto" , padding: "10px",  margin: "10px 0" }}>
       <option value="All">All Genres</option>
       <option value="Sci-Fi">Sci-Fi</option>
       <option value="Classic">Classic</option>

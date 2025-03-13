@@ -4,8 +4,11 @@ const Community = () => {
   return (
     <div className="container">
       <h1>Community</h1>
-      <p>Email: support@bookshoprec.com</p>
-      <p>Send an email to request new books to be added.</p>
+      <p>Groups</p>
+      <p>Discussions</p>
+      <p>Quotes</p>
+      <p>Ask the Author</p>
+      <p>People</p>
     </div>
   );
 };

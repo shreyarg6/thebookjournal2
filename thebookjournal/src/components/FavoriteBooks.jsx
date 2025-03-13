@@ -8,7 +8,6 @@ const FavoriteBooks = () => {
 
   return (
     <div className="favorite-books">
-      {/* <h2>Favorite Books</h2> */}
       {favorites.length > 0 ? (
         favorites.map((book) => <BookCard key={book.id} book={book} />)
       ) : (

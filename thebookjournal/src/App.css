@@ -7,33 +7,20 @@ body {
   height: 100%;
 }
 
-/* .container
-{
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
-
 nav {
-  /* float: right; */
   position: sticky;
-  /* padding-bottom: 100px; */
   color: #48402c;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
 }
 
 nav ul {
-  /* margin: 0px;
-  padding-bottom: 0px; */
   list-style: none;
 }
 
 nav li {
   display: inline-block;
   margin: 0px;
-  /* padding-top: 23px; */
-
   position: relative;
 }
 
@@ -43,8 +30,6 @@ nav a {
   text-transform: uppercase;
   font-size: 17px;
   font-family: "Georgia", "Times New Roman", serif;
-  /* margin-left: 35px;
-  margin-right: 35px; */
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 23px;
@@ -61,7 +46,6 @@ nav a:hover {
 .pink-theme {
   /* background-color: #d29b19; */
   background-color: #f7f1e7;
-
   /* background-color: #cbc6be; */
   padding: 0px;
 }
@@ -84,15 +68,10 @@ nav a:hover {
 }
 
 .column {
-  /* float: left; */
-  /* display: flex; */
   padding: 10px;
-  /* height: 300px; */
-  /* flex-wrap: wrap; */
 }
 
 .row {
-    /* float: left; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -115,6 +94,4 @@ nav a:hover {
   content: "";
   display: table;
   clear: both;
-    display: flex;
-    flex-wrap: wrap;
 }
