@@ -3,7 +3,7 @@ import FavoriteBooks from "../components/FavoriteBooks";
 
 const Favorites = () => {
   return (
-    <div>
+    <div className="container">
       <h1>My Favorite Books</h1>
       <FavoriteBooks />
     </div>

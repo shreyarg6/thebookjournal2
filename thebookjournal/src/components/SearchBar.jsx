@@ -16,7 +16,7 @@ const SearchBar = () => {
   return (
     <input
       type="text"
-      placeholder="Search books..."
+      placeholder="Search bookjournal"
       value={query}
       onChange={handleSearch}
       className="search-bar"
